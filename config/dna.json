@@ -1,7 +1,10 @@
 {
-  "apps": [],
-  "user": "root",
-  "gems": [
+  "apps":[],
+  "user":"root",
+  "packages":[
+   "irssi", "zsh", "strace", "logrotate", "sysstat", "host"
+  ],
+  "gems":[
     {
 	 "name":"rake",      
 	 "version":"0.8.3"
@@ -11,9 +14,14 @@
 	 "version": "2.0.3"
 	},
     {
-	 "name": "rack",
+	 "name":"rack",
 	 "version": "0.4.0"
+	},
+	{
+	 "name":"retr0h-fs_vlad",
+	 "source":"http://gems.github.com",
+	 "version":"1.2.0.2"
 	}
   ],
-  "recipes": ["main"]
+  "recipes":["main"]
 }
