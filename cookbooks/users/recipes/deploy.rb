@@ -9,7 +9,7 @@ user "deploy" do
   shell "/bin/zsh"
 end
 
-["var/www", "/var/www/sites", "/var/www/sites/u", home, "#{home}/.ssh"].each do |dir|
+["/var/www", "/var/www/sites", "/var/www/sites/u", home, "#{home}/.ssh"].each do |dir|
   directory dir do
     owner user
     group user
