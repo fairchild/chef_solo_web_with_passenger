@@ -1,5 +1,5 @@
 ##
 # Additional packages to install.
-%w(zsh strace logrotate sysstat).each do |p|
+%w(iptables irssi zsh strace logrotate sysstat).each do |p|
   package p
 end
