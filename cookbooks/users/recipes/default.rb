@@ -9,10 +9,12 @@ user user do
   shell "/bin/zsh"
 end
 
-directory "#{home}/.ssh" do
-  owner user
-  group user
-  mode 0500
+[home, "#{home}/.ssh"].each do |dir|
+  directory dir do
+    owner user
+    group user
+    mode (dir.include?('.ssh') ? 0500 : 0755)
+  end
 end
 
 template "#{home}/.ssh/authorized_keys" do

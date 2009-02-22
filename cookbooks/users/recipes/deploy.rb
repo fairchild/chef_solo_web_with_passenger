@@ -1,35 +1,25 @@
 ### TODO: Dry this up.
 
+user = "deploy"
+home = "/var/www/sites/u/app"
+
 user "deploy" do
   comment "Deploy User"
-  home "/var/www/sites/u/app"
+  home home
   shell "/bin/zsh"
 end
 
-deploy_directories = [
-  "/var/www",
-  "/var/www/sites",
-  "/var/www/sites/u",
-  "/var/www/sites/u/app"
-]
-
-deploy_directories.each do |dir|
+["var/www", "/var/www/sites", "/var/www/sites/u", home, "#{home}/.ssh"].each do |dir|
   directory dir do
-    owner "deploy"
-    group "deploy"
-    mode 0755
+    owner user
+    group user
+    mode (dir.include?('.ssh') ? 0500 : 0755)
   end
 end
 
-directory "/var/www/sites/u/app/.ssh" do
-  owner "deploy"
-  group "deploy"  
-  mode 0500
-end
-
-template "/var/www/sites/u/app/.ssh/authorized_keys" do
-  owner "deploy"
-  group "deploy"  
+template "/#{home}/.ssh/authorized_keys" do
+  owner user
+  group user
   mode 0400
   source "id_rsa.pub.erb"
 end
