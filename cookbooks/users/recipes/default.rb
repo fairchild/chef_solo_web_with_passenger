@@ -13,7 +13,7 @@ end
   directory dir do
     owner user
     group user
-    mode (dir.include?('.ssh') ? 0500 : 0755)
+    mode (dir.include?('.ssh') ? 0700 : 0755)
   end
 end
 

@@ -4,7 +4,7 @@ end
 
 ##
 # Postinstall script.
-bash "install-apache2-module" do
+bash "install_apache2_module" do
   code "echo -en '\n\n\n\n\n' | sudo passenger-install-apache2-module"
 end
 

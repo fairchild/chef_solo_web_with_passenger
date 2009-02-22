@@ -1,7 +1,7 @@
 ### TODO: Dry this up.
 
 user = "deploy"
-home = "/var/www/sites/u/app"
+home = "/var/www/sites/u/apps"
 
 user "deploy" do
   comment "Deploy User"
@@ -13,7 +13,7 @@ end
   directory dir do
     owner user
     group user
-    mode (dir.include?('.ssh') ? 0500 : 0755)
+    mode (dir.include?('.ssh') ? 0700 : 0755)
   end
 end
 
