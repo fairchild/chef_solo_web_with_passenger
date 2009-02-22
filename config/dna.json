@@ -20,7 +20,7 @@
 	{
 	 "name":"retr0h-fs_vlad",
 	 "source":"http://gems.github.com",
-	 "version":"1.2.0.2"
+	 "version":"1.2.0.3"
 	}
   ],
   "recipes":["main"]
