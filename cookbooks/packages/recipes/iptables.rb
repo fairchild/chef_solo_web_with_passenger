@@ -1,3 +1,5 @@
+package "iptables"
+
 script "iptables_setup" do
   interpreter "bash"
   user "root"
