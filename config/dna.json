@@ -2,7 +2,7 @@
   "apps":[],
   "user":"root",
   "packages":[
-   "irssi", "zsh", "strace", "logrotate", "sysstat", "host"
+   "irssi", "zsh", "strace", "logrotate", "sysstat", "host apache2 apache2-threaded-dev libapache2-mod-passenger"
   ],
   "gems":[
     {
