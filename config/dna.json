@@ -6,22 +6,21 @@
   ],
   "gems":[
     {
-	 "name":"rake",      
-	 "version":"0.8.3"
-	},
+      "name":"rake",
+      "version":"0.8.3"
+    },
     {
-	 "name":"passenger",
-	 "version": "2.0.3"
-	},
+      "name":"passenger",
+      "version": "2.0.3"
+    },
     {
-	 "name":"rack",
-	 "version": "0.4.0"
-	},
-	{
-	 "name":"retr0h-fs_vlad",
-	 "source":"http://gems.github.com",
-	 "version":"1.2.0.3"
-	}
+      "name":"rack",
+      "version": "0.4.0"
+    },
+    {
+      "name":"geminstaller",
+      "version":"0.5.1"
+    }
   ],
   "recipes":["main"]
 }
