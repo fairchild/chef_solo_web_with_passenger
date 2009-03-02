@@ -23,3 +23,10 @@ template "#{home}/.ssh/authorized_keys" do
   mode 0400
   source "id_rsa.pub.erb"
 end
+
+template "#{home}/.zshrc" do
+  owner user
+  group user
+  mode 0400
+  source "zshrc.erb"
+end
