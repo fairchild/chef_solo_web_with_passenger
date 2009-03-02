@@ -23,3 +23,7 @@ template "/#{home}/.ssh/authorized_keys" do
   mode 0400
   source "id_rsa.pub.erb"
 end
+
+bash "sudo_user" do
+  code "usermod -G sudo -a deploy"
+end
