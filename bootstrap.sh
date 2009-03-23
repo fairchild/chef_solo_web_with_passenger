@@ -5,6 +5,7 @@ rm -rf /root/.gem && mkdir /root/.gem && chown 000 /root/.gem
 
 ### bootstrap with ruby.
 apt-get update && apt-get upgrade
+gem install rubygems-update && /var/lib/gems/1.8/bin/update_rubygems
 apt-get install ruby ruby1.8-dev rubygems libopenssl-ruby1.8 libsqlite3-ruby irb build-essential
 
 ### bootstrap with chef.
