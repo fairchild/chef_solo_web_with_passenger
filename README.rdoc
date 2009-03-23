@@ -1,0 +1,33 @@
+= chef_solo_web_with_passenger
+
+This repository is used to build a generic ruby web server with Apache and
+Phusion Passenger via Chef Solo.
+
+Chef Solo allows you to run Chef Cookbooks in the absence of a Chef Server.
+It does this by requiring that the complete cookbook be present on disk, which
+it will fetch by getting a tarball from a remote URL.
+
+== Tested
+
+Ubuntu
+  8.10
+  8.10 x86 64-bit
+  8.04 LTS
+  8.04 LTS 64bit
+Debian
+  4.0
+  4.0 64bit
+  5.0
+  5.0 64bit
+
+== Installation
+
+  * apt-get update && apt-get install git-core
+  * cd /tmp && git clone git://github.com/retr0h/chef_solo_web_with_passenger.git && cd /tmp/chef_solo_web_with_passenger
+  * ./bootstrap.sh
+
+== TODO
+
+  * Still need to manually create your Apache virtualhosts.
+    May integrate with pool-party (http://github.com/foysavas/pool-party/tree/master)
+  * Does not set the system's hostname and other miscellaneous items.

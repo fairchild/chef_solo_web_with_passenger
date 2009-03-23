@@ -1,4 +1,0 @@
-Ubuntu 8.10 x86 64-bit
-  # apt-get update && apt-get install git-core
-  # cd /tmp && git clone git://github.com/retr0h/chef_solo_web_with_passenger.git && cd /tmp/chef_solo_web_with_passenger
-  # ./bootstrap.sh

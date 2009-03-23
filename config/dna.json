@@ -2,7 +2,7 @@
   "apps":[],
   "user":"root",
   "packages":[
-    "screen curl irssi", "zsh", "strace", "lsof", "logrotate", "sysstat", "host apache2 apache2-threaded-dev libapache2-mod-passenger"
+    "screen", "curl", "zsh", "strace", "lsof", "logrotate", "sysstat", "host", "apache2", "apache2-threaded-dev", "libapache2-mod-passenger"
   ],
   "gems":[
     {
@@ -11,11 +11,11 @@
     },
     {
       "name":"passenger",
-      "version": "2.0.3"
+      "version": "2.1.2"
     },
     {
       "name":"rack",
-      "version": "0.4.0"
+      "version": "0.9.1"
     },
     {
       "name":"geminstaller",
