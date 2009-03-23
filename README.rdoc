@@ -1,7 +1,9 @@
 = chef_solo_web_with_passenger
 
 This repository is used to build a generic ruby web server with Apache and
-Phusion Passenger via Chef Solo.
+Phusion Passenger via Chef Solo.  You can then use the following repository
+to create accounts:
+  http://github.com/retr0h/chef_solo_accounts/tree/master
 
 Chef Solo allows you to run Chef Cookbooks in the absence of a Chef Server.
 It does this by requiring that the complete cookbook be present on disk, which
