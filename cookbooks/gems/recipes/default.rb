@@ -9,3 +9,7 @@ node[:gems].each do |gem|
     action :install
   end
 end
+
+bash "gems_github_com" do
+  code "gem sources -a http://gems.github.com"
+end
