@@ -2,7 +2,7 @@
   "apps":[],
   "user":"root",
   "packages":[
-    "screen", "curl", "zsh", "strace", "lsof", "logrotate", "sysstat", "host", "apache2", "apache2-threaded-dev", "libapache2-mod-passenger"
+    "screen", "curl", "wget", "zsh", "strace", "lsof", "logrotate", "sysstat", "host", "apache2", "apache2-threaded-dev", "libapache2-mod-passenger"
   ],
   "gems":[
     {
